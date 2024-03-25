@@ -48,7 +48,7 @@ void task_LDRinfo(void)
 			
 		}
 		else { 		
-			writeString_P(" It is very dark!");
+			writeString_P(" Es ist sehr dunkel");
 			if(adcLSL < adcLSR) 
 			{
 				setLEDs(0b010110);
@@ -74,7 +74,7 @@ void task_LDRinfo(void)
 		writeChar('\n');
 		if(adcBat < 600) 
 		{
-			writeString_P("WARNING: BAT IS LOW!\n");
+			writeString_P("WARNING: Batterie ist niedrig\n");
 			writeChar('\n');
 		}
 		setStopwatch1(0);
